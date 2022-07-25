@@ -6,7 +6,7 @@
 #    By: gbreana <gbreana@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/20 08:25:42 by gbreana           #+#    #+#              #
-#    Updated: 2022/07/24 15:12:10 by gbreana          ###   ########.fr        #
+#    Updated: 2022/07/25 15:01:58 by gbreana          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,8 +36,6 @@ MDEPS		=	$(patsubst %.c,%.d,$(MSRC))
 
 CC			=	cc
 CFLAGS		=	-Wall -Werror -Wextra -MD
-#CFLAGS 		+=	-lreadline -L /usr/local/opt/readline/lib
-#CFLAGS		+=	-I /usr/local/opt/readline/include
 
 RM			=	rm -rf
 
