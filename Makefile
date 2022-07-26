@@ -6,7 +6,7 @@
 #    By: gbreana <gbreana@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/20 08:25:42 by gbreana           #+#    #+#              #
-#    Updated: 2022/07/25 15:01:58 by gbreana          ###   ########.fr        #
+#    Updated: 2022/07/26 11:04:12 by gbreana          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,8 @@ LIBFT		=	libft.a
 MDIR		= 	./sources/
 #BDIR		=	./sources/
 
-MFLS		=	main.c
+MFLS		=	main.c \
+				builtins/pwd.c
 #BFLS		=	
 
 MSRC		=	$(addprefix $(MDIR), $(MFLS))
