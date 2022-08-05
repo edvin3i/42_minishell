@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pwd.c                                              :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbreana <gbreana@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/26 10:52:51 by gbreana           #+#    #+#             */
-/*   Updated: 2022/07/26 12:56:23 by gbreana          ###   ########.fr       */
+/*   Created: 2022/08/05 11:17:48 by gbreana           #+#    #+#             */
+/*   Updated: 2022/08/05 11:24:11 by gbreana          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/minishell.h"
 
-int	pwd(void)
+char	*ft_readline(char *str)
 {
-	char	*buf;
-
-	buf = getcwd(NULL, 0);
-	ft_putstr_fd(buf, 1);
-	ft_putstr_fd("\n", 1);
-	free(buf);
-	return (0);
+	char	*line;
+	
+	line = readline(str);
+	if (*line)
+		add_history(line);
+	return (line);
 }

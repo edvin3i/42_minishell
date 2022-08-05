@@ -6,7 +6,7 @@
 #    By: gbreana <gbreana@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/20 08:25:42 by gbreana           #+#    #+#              #
-#    Updated: 2022/07/26 11:04:12 by gbreana          ###   ########.fr        #
+#    Updated: 2022/08/05 11:47:56 by gbreana          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ MDIR		= 	./sources/
 #BDIR		=	./sources/
 
 MFLS		=	main.c \
+				lexer/utils.c \
 				builtins/pwd.c
 #BFLS		=	
 
@@ -61,7 +62,7 @@ $(NAME):		$(LIBFT) $(MOBJS)
 
 clean:
 				@make clean -s -C ./libft
-				$(RM) $(MOBJS) $(MDEPS) $(BOBJS) $(BDEPS)
+				$(RM) $(MOBJS) $(MDEPS) $(BOBJS) $(BDEPS) null.d
 
 fclean:			clean
 				@make fclean -s -C ./libft

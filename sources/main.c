@@ -6,7 +6,7 @@
 /*   By: gbreana <gbreana@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 13:55:30 by gbreana           #+#    #+#             */
-/*   Updated: 2022/07/26 11:02:59 by gbreana          ###   ########.fr       */
+/*   Updated: 2022/08/05 11:18:13 by gbreana          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 int main(void)
 {
-	char    *str=NULL;
-		
+	char	*line;
+	
 	while(1)
 	{
-		str = readline(" $: ");
-		add_history(str);
-		printf("Line = %s\n", str);
-		free(str);
+		pwd();
+		line = ft_readline("minishel >> ");
+		printf("Line = %s\n", line);
+		
+		free(line);
 	}
 }

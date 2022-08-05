@@ -6,7 +6,7 @@
 /*   By: gbreana <gbreana@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 12:11:24 by gbreana           #+#    #+#             */
-/*   Updated: 2022/07/24 15:36:03 by gbreana          ###   ########.fr       */
+/*   Updated: 2022/08/05 11:22:44 by gbreana          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,14 @@ typedef struct s_cmdlist
 
 */
 
+/*
+*	Lexer's utils
+*/
+char	*ft_readline(char *str);
+
+/*
+*	Builtins
+*/
+int	pwd(void);
 
 #endif
